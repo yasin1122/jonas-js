@@ -14,3 +14,10 @@ console.log(typeof isIsland, typeof population, typeof country, typeof language)
 language = 'English'
 
 // Basic Operators
+let numStr = '1988'
+
+let age = Number(numStr) // converts to number
+console.log(age + 2)
+console.log('10' / 2)
+
+console.log(`The number is ${11 % 2 === 0 ? 'even' : 'odd'}.`)
