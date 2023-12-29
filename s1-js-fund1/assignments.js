@@ -55,3 +55,27 @@ const jordan = {
 }
 console.log(jordan['message']('Hawks'))
 console.log(jordan.message2())
+
+// Calculate Temperature Amplitude for Thermometer
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5]
+
+const amplitudeCalc = arr => {
+  let min
+  let max
+  for (let i = 0; i <= arr.length - 1; i++) {
+    if (typeof arr[i] === 'number') {
+      if (typeof min === 'undefined') {
+        min = arr[i]
+        max = arr[i]
+      } else if (arr[i] < min) {
+        min = arr[i]
+      } else if (arr[i] > max) {
+        max = arr[i]
+      }
+    } else {
+      continue
+    }
+  }
+  return max - min
+}
+console.log(amplitudeCalc(temperatures))
