@@ -1,3 +1,4 @@
+let numStr = '1988'
 let age = Number(numStr) // converts to number
 console.log(age + 2)
 console.log('10' / 2)
