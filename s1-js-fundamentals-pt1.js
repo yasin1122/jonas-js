@@ -34,3 +34,5 @@ console.log('123' < 57) // false
 console.log(5 + 6 + '4' + 9 - 4 - 2) // 1143
 
 // Equality Operators: == vs. ===
+let numNeighbors = Math.floor(Math.random() * 10) + 1
+console.log(numNeighbors === 1 ? 'Only 1 border!' : 'More than 1 border.')
