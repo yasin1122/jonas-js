@@ -22,3 +22,7 @@ const unitedStatesPopulation = percentageOfWorld1(300)
 const turkeyPopulation = percentageOfWorld1(80)
 const indiaPopulation = percentageOfWorld1(1400)
 console.log(unitedStatesPopulation, turkeyPopulation, indiaPopulation)
+
+// Arrow Functions
+const percentageOfWorld3 = population => population / 79
+console.log(percentageOfWorld3(300))
