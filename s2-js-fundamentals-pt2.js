@@ -26,3 +26,13 @@ console.log(unitedStatesPopulation, turkeyPopulation, indiaPopulation)
 // Arrow Functions
 const percentageOfWorld3 = population => population / 79
 console.log(percentageOfWorld3(300))
+
+// Functions Calling Other Functions
+const describePopulation = (country, population) => {
+  return `${country} has ${population} million people, which is about ${percentageOfWorld1(
+    population
+  ).toFixed(2)}% of the World.`
+}
+console.log(describePopulation('United States', 300))
+
+// Introduction to Arrays
