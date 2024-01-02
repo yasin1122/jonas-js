@@ -9,3 +9,16 @@ const india = describeCountry('India', 1400, 'New Delhi')
 console.log(`  ${unitedStates}
   ${turkey}
   ${india}`)
+
+// Function Declarations vs. Expressions
+function percentageOfWorld1(population) {
+  return population / 79
+}
+const percentageOfWorld2 = function (population) {
+  return population / 79
+}
+
+const unitedStatesPopulation = percentageOfWorld1(300)
+const turkeyPopulation = percentageOfWorld1(80)
+const indiaPopulation = percentageOfWorld1(1400)
+console.log(unitedStatesPopulation, turkeyPopulation, indiaPopulation)
