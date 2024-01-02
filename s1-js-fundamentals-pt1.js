@@ -62,7 +62,5 @@ switch (language.toLowerCase()) {
 
 // The Conditional (Ternary) Operator
 console.log(
-  population > 33
-    ? `${country}'s population is above average.`
-    : `${country}'s population is ${33 - population} million below average.`
+  `${country}'s population is ${population > 33 ? 'above' : 'below'} average`
 )
