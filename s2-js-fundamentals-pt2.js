@@ -77,6 +77,8 @@ myCountry.describe = function () {
 myCountry.describe()
 myCountry.checkIsIsland = function () {
   this.isIsland = neighbors.length > 0 ? false : true
+  // Even simpler version (see why this works...)
+  // this.isIsland = !Boolean(this.neighbours.length);
 }
 
 // Iteration: The for Loop
