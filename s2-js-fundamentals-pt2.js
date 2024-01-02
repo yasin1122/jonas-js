@@ -42,3 +42,12 @@ const percentages = []
 for (let i = 0; i < populations.length; i++) {
   percentages.push(percentageOfWorld1(populations[i]).toFixed(2))
 }
+
+// Basic Array Operations (Methods)
+const neighbors = ['Canada', 'Mexico', 'Cuba']
+neighbors.push('Utopia')
+neighbors.pop()
+console.log(neighbors)
+console.log(neighbors.includes('Germany') ? 'In Europe' : 'Not in Europe')
+neighbors[neighbors.indexOf('Cuba')] = 'Bahamas'
+console.log(neighbors)
