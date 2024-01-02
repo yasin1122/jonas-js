@@ -62,8 +62,48 @@ const myCountry = {
 }
 
 // Dot vs. Bracket Notation
-myCountry.capital += 2
-myCountry['capital'] -= 2
+myCountry.population += 2
+myCountry['population'] -= 2
 console.log(
   `${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}.`
 )
+
+// Object Methods
+myCountry.describe = function () {
+  console.log(
+    `${this.country} has ${this.population} million ${this.language} speaking people, ${this.neighbors.length} neighboring countries and a capital called ${this.capital}.`
+  )
+}
+myCountry.describe()
+myCountry.checkIsIsland = function () {
+  this.isIsland = neighbors.length > 0 ? false : true
+}
+
+// Iteration: The for Loop
+for (let i = 1; i <= 5; i++) {
+  console.log(`Voter number ${i} is voting.`)
+}
+
+// Looping Arrays, Breaking and Continuing
+console.log(percentages)
+
+// Looping Backwards and Loops in Loops
+const listOfNeighbours = [
+  ['Canada', 'Mexico'],
+  ['Spain'],
+  ['Norway', 'Sweden', 'Russia']
+]
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let j = 0; j < listOfNeighbours[i].length; j++) {
+    console.log(`Country ${i + 1} Neighbor: ${listOfNeighbours[i][j]}`)
+  }
+}
+
+// The while Loop
+const percentages3 = []
+let whileCounter = 0
+while (whileCounter < populations.length) {
+  percentages3.push(percentageOfWorld1(populations[whileCounter]).toFixed(2))
+  whileCounter++
+}
+console.log(percentages3)
