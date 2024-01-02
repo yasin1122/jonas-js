@@ -51,3 +51,19 @@ console.log(neighbors)
 console.log(neighbors.includes('Germany') ? 'In Europe' : 'Not in Europe')
 neighbors[neighbors.indexOf('Cuba')] = 'Bahamas'
 console.log(neighbors)
+
+// Introduction to Objects
+const myCountry = {
+  country: 'United States',
+  capital: 'Washington DC',
+  language: 'English',
+  population: 300,
+  neighbors: ['Canada', 'Mexico', 'Cuba']
+}
+
+// Dot vs. Bracket Notation
+myCountry.capital += 2
+myCountry['capital'] -= 2
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}.`
+)
