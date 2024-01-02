@@ -43,3 +43,19 @@ if (language === 'English' && population > 50 && !isIsland) {
 } else {
   console.log('You should not live in USA.')
 }
+
+// The switch Statement
+switch (language.toLowerCase()) {
+  case 'chinese' || 'mandarin':
+    console.log('Most number of native speakers!')
+    break
+  case 'spanish':
+    console.log('Second most number of native speakers.')
+    break
+  case 'english':
+    console.log('3rd place.')
+    break
+  default:
+    console.log('That is a great language too!')
+    break
+}
