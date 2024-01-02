@@ -36,3 +36,9 @@ const describePopulation = (country, population) => {
 console.log(describePopulation('United States', 300))
 
 // Introduction to Arrays
+const populations = [300, 80, 1400, 40]
+console.log(populations.length === 4)
+const percentages = []
+for (let i = 0; i < populations.length; i++) {
+  percentages.push(percentageOfWorld1(populations[i]).toFixed(2))
+}
