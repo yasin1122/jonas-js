@@ -1,0 +1,1 @@
+Command + Option + J = Opens Chrome developer tools.
